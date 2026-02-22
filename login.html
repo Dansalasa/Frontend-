@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#e9ecef;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+    .box{
+      background:#fff;
+      padding:25px;
+      width:320px;
+      border-radius:8px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    input{
+      width:100%;
+      padding:10px;
+      margin-bottom:12px;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+    button{
+      width:100%;
+      padding:10px;
+      background:#28a745;
+      color:#fff;
+      border:none;
+      border-radius:5px;
+      font-size:16px;
+      cursor:pointer;
+    }
+    button:hover{
+      background:#1e7e34;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Login</h2>
+
+    <!-- FORM YA HADE DA MAIN.JS -->
+    <form onsubmit="loginUser(); return false;">
+      
+      <input type="email" id="email" placeholder="Enter Email" required>
+      
+      <input type="password" id="password" placeholder="Enter Password" required>
+      
+      <button type="submit">Login</button>
+
+    </form>
+  </div>
+
+  <!-- HADE MAIN.JS -->
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>People | Nabaichi Seed</title>
+  <link rel="stylesheet" href="people.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h2>People</h2>
+  <p id="coinBalance">Coins: 10</p>
+</header>
+
+<section class="people-container">
+
+  <!-- Person Card -->
+  <div class="card">
+    <img src="images/people/p1.png" alt="Person">
+    <h3>Abdul Musa</h3>
+    <button onclick="vote()">Vote </button>
+  </div>
+
+  <div class="card">
+    <img src="Imagebg.jpg3" alt="Person">
+    <h3>Aisha Bello</h3>
+    <button onclick="vote()">Vote pfo</button>
+  </div>
+
+  <div class="card">
+    <img src="Imagebg3.jpg" alt="Person">
+    <h3>Sadiq Lawal</h3>
+    <button onclick="vote()">Vote </button>
+  </div>
+
+</section>
+
+<script>
+  let coins = 10;
+
+  function vote() {
+    if (coins >= 2) {
+      coins -= 2;
+      document.getElementById("coinBalance").innerText = "Coins: " + coins;
+      alert("Vote successful!");
+    } else {
+      alert("Not enough coins. Please buy more.");
+    }
+  }
+</script>
+
+</body>
+</html>peo

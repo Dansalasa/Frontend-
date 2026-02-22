@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    text-align: center;
+    padding: 40px;
+}
+body {
+  background-image: url("intro-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+
+h1 {
+    color: #0a7d2c;
+}
+
+p {
+    color: #333;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+button {
+    background-color: #0a7d2c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #066020;
+}
